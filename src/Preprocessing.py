@@ -16,7 +16,7 @@ edge_string = "_edge_detected"
 for imageFolder in imageFolders: 
     # name for destination folder
     dstFolderName = imageFolder + edge_string
-    dstFolderPath = f"archive/tom_and_jerry/tom_and_jerry/{dstFolderName}"
+    dstFolderPath = f"archive/tom_and_jerry/tom_and_jerry_edge_detected/{dstFolderName}"
 
     # make destination folder
     os.mkdir(dstFolderPath)
