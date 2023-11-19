@@ -33,7 +33,9 @@ for imageFolder in imageFolders:
         # only crop if we will brutally cut down images such that no images have borders
         # image = image[96:660, :]
 
-        # cv.imshow("thing", image)
+        # Create the edge-detected image
         edges = cv.Canny(image, 100, 250)
+        
+        # Write it to the proper folder
         cv.imwrite(dstFolderPath + "/" + imageName, edges)
 print("Folders successfully created and filled")
